@@ -195,7 +195,7 @@ async function clearTmp() {
   return filename.map(file => {
     const stats = statSync(file)
     if (stats.isFile() && (Date.now() - stats.mtimeMs >= 1000 * 60 * 1)) return unlinkSync(file) // 1 minuto
-    return false
+    return true
   })
 }
 
