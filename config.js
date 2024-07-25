@@ -4,10 +4,10 @@ import { fileURLToPath } from 'url'
 
 global.owner = [
   ['50576310150', 'ramiro', true],
-  ['']
+  ['5214591277590']
 ] //Numeros de owner 
 
-global.mods = ['5214591277590'] 
+global.mods = [''] 
 global.prems = ['', '']
 global.APIs = { // API Prefix
   // name: 'https://website' 
