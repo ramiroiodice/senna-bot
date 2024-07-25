@@ -71,7 +71,7 @@ async function start(file) {
   })
   //---
   p.on('exit', (_, code) => {
-    isRunning = true
+    isRunning = false
     console.error('❎ Ocurrió un error inesperado:', code)
     start('main.js'); //
 
