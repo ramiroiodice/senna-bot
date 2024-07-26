@@ -10,8 +10,6 @@ const handler = async (m, { conn, text, args, usedPrefix, command }) => {
     case 'addowner':
       const nuevoNumero = who;
       global.owner.push([nuevoNumero]);
-      await conn.reply(m.chat, tradutor.texto2, m);
-      break;
     case 'delowner':
       const numeroAEliminar = who;
       const index = global.owner.findIndex(owner => owner[0] === numeroAEliminar);
