@@ -1,6 +1,5 @@
 import { createHash } from 'crypto'
 let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
-let handler = async function (m, { conn, text, usedPrefix, command }) {
 let user = global.db.data.users[m.sender]
 let name2 = conn.getName(m.sender)
 if (user.registered === true) throw `*『✦』Ya estas registrado, para volver a registrarte, usa el comando: #unreg*`
