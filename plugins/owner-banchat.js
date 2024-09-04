@@ -8,6 +8,7 @@ handler.help = ['banchat']
 handler.tags = ['owner']
 handler.command = ['banchat', 'chatoff'] 
 handler.group = true
+handler.rowner = true;
 
 export default handler
  
